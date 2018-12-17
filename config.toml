@@ -20,6 +20,10 @@ highlight_code = true
 generate_categories_pages = true
 generate_tags_pages = true
 
+taxonomies = [
+	   {name = "categories", rss = true},
+	   {name = "tags", rss = true},
+]
 
 [extra]
 feather_disqus_code = "<div id='disqus_thread'><div style='background: lightgrey; text-align: center; color: grey; padding: 100px 24px;'>Comments mockup</div></div>"

@@ -37,6 +37,18 @@
     <a href="/">
       <div class='header-image' style='background-image: url({% if config.extra.feather_header_image %}{{ config.extra.feather_header_image }}{% else %}/theme_images/default.gif{% endif %});'></div>
     </a>
+    
+    {% block head_links %}
+    <div class="container">
+      <div class="categories">
+	<div class="categories-row">
+      <span class="c1"><a href="/categories/art">Art</a></span>
+      <span class="c1"><a href="/categories/food">Food</a></span>
+      <span class="c1"><a href="/categories/living">Living</a></span>
+	</div>
+	</div>
+    </div>
+    {% endblock head_links %}
 
     {% block content %}
     <div class="container">
@@ -52,19 +64,13 @@
 
               <!-- TODO: modularize this so we don't repeat ourselves -->
               <div class='info'>
-                <span>{{ page.reading_time }} minute read</span>
                 {% if page.date %}
-                  <span class='divider'/>
                   <span>{{ page.date | date(format="%d %B %Y") }}</span>
                 {% endif %}
-                {% if page.category %}
+                {% if page.extra.category %}
                   <span class='divider'/>
                   <!-- link to page category if user is building categories -->
-                  {% if config.generate_categories_pages %}
-                    <span><a href="/categories/{{page.category | slugify }}">{{ page.category }}</a></span>
-                  {% else %}
-                    <span>{{ page.category }}</span>
-                  {% endif %}
+                  <span><a href="/categories/{{page.extra.category | slugify }}">{{ page.extra.category }}</a></span>
                 {% endif %}
               </div>
             </section>

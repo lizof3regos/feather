@@ -1,0 +1,19 @@
+{% extends "feather/templates/index.html" %}
+
+{% block content %}
+  <div class="container">
+    <section>
+      <h2> Categories </h2>
+    </section>
+    <div class="posts">
+      {% for term in terms %}
+          <section>
+            <a class='header-link' href="{{term.permalink | safe}}">
+              <h4 class="title"> {{ term.name }} ({{ term.pages | length}})</h4>
+            </a>
+          </section>
+        <hr/>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}

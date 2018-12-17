@@ -1,7 +1,8 @@
 +++
 title = "My first post"
 date = 2018-01-07
-category = "test"
+[extra]
+category = "art"
 +++
 
 # Hey all

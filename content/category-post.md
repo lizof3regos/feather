@@ -1,7 +1,10 @@
 +++
 title = "Categories yeah!"
 date = 2018-01-06
-category = "test"
+[taxonomies]
+categories = ["test"]
+[extra]
+category = "food"
 +++
 
 # Categories and tags

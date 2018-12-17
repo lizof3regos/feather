@@ -6,10 +6,10 @@
       <h2> Categories </h2>
     </section>
     <div class="posts">
-      {% for category in categories %}
+      {% for term in terms %}
           <section>
-            <a class='header-link' href="{{category.slug}}">
-              <h4 class="title"> {{ category.name }} </h4>
+            <a class='header-link' href="{{term.permalink | safe}}">
+              <h4 class="title"> {{ term.name }} ({{ term.pages | length}})</h4>
             </a>
           </section>
         <hr/>

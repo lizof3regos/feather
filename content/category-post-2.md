@@ -1,7 +1,8 @@
 +++
 title = "Categories part 2"
 date = 2018-01-05
-category = "other"
+[extra]
+category = "art"
 +++
 
 # Categories and tags
