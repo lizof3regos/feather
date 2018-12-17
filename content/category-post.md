@@ -2,7 +2,7 @@
 title = "Categories yeah!"
 date = 2018-01-06
 [taxonomies]
-categories = ["test"]
+categories = ["food"]
 [extra]
 category = "food"
 +++

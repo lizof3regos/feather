@@ -1,6 +1,8 @@
 +++
 title = "Categories part 2"
 date = 2018-01-05
+[taxonomies]
+categories = ["art"]
 [extra]
 category = "art"
 +++

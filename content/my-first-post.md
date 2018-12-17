@@ -1,6 +1,8 @@
 +++
 title = "My first post"
 date = 2018-01-07
+[taxonomies]
+categories = ["art"]
 [extra]
 category = "art"
 +++
